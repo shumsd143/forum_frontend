@@ -55,7 +55,7 @@ class Login extends React.Component{
         }
         return (
             <div>
-                <h1 className="login-head"><i>Login Form</i></h1>
+                <h1 className="login-head">Login Form</h1>
                 <div className="login-adjust">
                     <Form>
                         <Form.Group controlId="formBasicEmail">

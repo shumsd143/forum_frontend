@@ -1,8 +1,9 @@
 @media only screen and (min-width: 500px) {
     .login-adjust{
         width: 600px;
-        border: 15px solid green;
+        border: 15px solid #fdf9f3;
         border-radius: 10px;
+        background-color: #fdf9f3;
         padding: 50px;
         margin: 20px;
         margin-left: auto;

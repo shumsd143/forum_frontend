@@ -11,7 +11,7 @@ class Eachblog extends React.Component{
         /* console.log(this.props.bloginfo) */
         this.state={
             likecount:'',
-            likevalue:'like'
+            likevalue:'Like'
         }
     }
     fetcher=()=>{
@@ -28,7 +28,7 @@ class Eachblog extends React.Component{
             else{
                 this.setState({
                     likecount:Object.keys(obj).length,
-                    likevalue:'like'
+                    likevalue:'Like'
                 })
             }
         })
@@ -41,7 +41,7 @@ class Eachblog extends React.Component{
                 blogid:this.props.id
             }
             axios.post('https://forumbacken.herokuapp.com/like/post',object).then(res=>{
-                if(this.state.likevalue==='like'){
+                if(this.state.likevalue==='Like'){
                     this.setState({
                         likecount:this.state.likecount+1,
                         likevalue:'Unlike'

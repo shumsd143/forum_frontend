@@ -56,10 +56,10 @@ class Home extends React.Component{
         if(load===false){
             return (
                 <div>
-                    <button className="Adjustbutton" onClick={this.openmodal}>Create a New Post</button>
                     <div className="inputparent">
                         <input className="inputer" type="text" placeholder="  Search for title" value={search_value} onChange={this.searcher}/>
                     </div>
+                    <button className="Adjustbutton" onClick={this.openmodal}>Create a New Post</button>
                     <Modal show={modal_state} onHide={this.closemodal}>
                         <UploadBody closer={this.closemodal}/>
                     </Modal>
@@ -75,10 +75,10 @@ class Home extends React.Component{
         }
         return (
             <div>
-                <button className="Adjustbutton" onClick={this.openmodal}>Create a New Post</button>
                 <div className="inputparent">
                     <input className="inputer" type="text" placeholder="  Search for Post" value={search_value} onChange={this.searcher}/>
                 </div>
+                <button className="Adjustbutton" onClick={this.openmodal}>Create a New Post</button>
                 <Modal show={modal_state} onHide={this.closemodal}>
                     <UploadBody closer={this.closemodal}/>
                 </Modal>
