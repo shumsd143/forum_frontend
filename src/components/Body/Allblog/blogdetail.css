@@ -12,7 +12,11 @@
         font-weight: bolder;
     }
     .description-adjust-detail{
+        margin-top: 14px;
         margin-left: 14px;
+        margin-right: 14px;
+        margin-bottom: 14px;
+        text-align: center;
         font-size: medium;
     }
     .desc-header{
@@ -28,13 +32,14 @@
         margin-right: 12%;
     }
 }
-@media only screen and (min-width: 500px){
+@media only screen and (max-width: 500px){
     .author-adjust-detail{
-        font-size: larger;
+        font-size: small;
     }
     .date-adjust-detail{
         float: right;
-        font-size: larger;
+        margin-top: 2px;
+        font-size: small;
     }
     .title-adjust-detail{
         text-align: center;
@@ -42,11 +47,15 @@
         font-weight: bolder;
     }
     .description-adjust-detail{
+        margin-top: 14px;
         margin-left: 14px;
+        margin-right: 14px;
+        margin-bottom: 14px;
         font-size: medium;
+        text-align: center;
     }
     .desc-header{
-        margin:100px auto;
+        margin:50px auto;
         border-style: solid;
         border-color: grey;
         border-width: 1px 1px 20px 1px;
