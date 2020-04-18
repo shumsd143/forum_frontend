@@ -48,7 +48,7 @@ class Blogdetail extends React.Component{
                     <div className="date-adjust-detail">{data.date}</div>
                 </div>
                 <div className="desc-header"><p className="description-adjust-detail">{data.description}</p></div>
-        <div className="body-header">{ReactHtmlParser(data.blogbody)}</div>
+                <div className="body-header">{ReactHtmlParser(data.blogbody)}</div>
             </div>
         )
     }
