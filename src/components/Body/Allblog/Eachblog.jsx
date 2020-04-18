@@ -15,7 +15,7 @@ class Eachblog extends React.Component{
         }
     }
     fetcher=()=>{
-        fetch('http://localhost:5000/like/get/'+this.props.id)
+        fetch('https://forumbacken.herokuapp.com/like/get/'+this.props.id)
         .then(res=>res.json())
         .then(json=>{
             let obj=json[0].likename
