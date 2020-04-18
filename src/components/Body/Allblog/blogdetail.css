@@ -1,0 +1,28 @@
+.author-adjust-detail{
+    font-size: larger;
+}
+.date-adjust-detail{
+    float: right;
+    font-size: larger;
+}
+.title-adjust-detail{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.description-adjust-detail{
+    margin-left: 14px;
+    font-size: medium;
+}
+.desc-header{
+    margin:100px auto;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px 1px 20px 1px;
+    border-radius: 25px;        
+    width: 60%;
+}
+.inside-container{
+    margin-left: 12%;
+    margin-right: 12%;
+}
