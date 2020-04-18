@@ -11,6 +11,7 @@ class Navigation extends React.Component{
     handleclick=(event)=>{
         if(window.confirm('Are you sure you want to logout')){
             this.props.changeName()
+            window.location.assign('/');
         }
         event.preventDefault()
     }
@@ -25,7 +26,7 @@ class Navigation extends React.Component{
                         </Nav>
                         <div>
                             <Navbar.Text className="modify-text-show">Hi, {this.props.myname}</Navbar.Text>
-                            <Link to="/"><Button variant="info" onClick={this.handleclick}>Logout</Button></Link>
+                            <Button variant="info" onClick={this.handleclick}>Logout</Button>
                         </div>
                     </Navbar.Collapse>
                 </Navbar>
