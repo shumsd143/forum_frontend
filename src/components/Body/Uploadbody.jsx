@@ -49,7 +49,7 @@ class Uploadbody extends React.Component{
                 blogbody:this.state.blogbody
             }
             if(window.confirm('are you sure you want to post data')){
-                axios.post('http://localhost:5000/blog/post',obj).then(res=>{
+                axios.post('https://forumbacken.herokuapp.com/blog/post',obj).then(res=>{
                     console.log(res)
                     alert('your data is posted')
                     this.props.closer()

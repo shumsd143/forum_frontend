@@ -13,7 +13,7 @@ class Blogdetail extends React.Component{
         }
     }
     fetcher=()=>{
-        fetch('http://localhost:5000/get/eachblog/'+this.state._id)
+        fetch('https://forumbacken.herokuapp.com/get/eachblog/'+this.state._id)
         .then(res=>res.json())
         .then(json=>{
             this.setState({

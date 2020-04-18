@@ -34,7 +34,7 @@ class Home extends React.Component{
         this.fetcher()
     }
     fetcher=()=>{
-        fetch('http://localhost:5000/get/allblog')
+        fetch('https://forumbacken.herokuapp.com/get/allblog')
         .then(res=>res.json())
         .then(json=>{
             this.setState({

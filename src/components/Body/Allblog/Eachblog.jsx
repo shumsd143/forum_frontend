@@ -40,7 +40,7 @@ class Eachblog extends React.Component{
                 email:this.props.myemail,
                 blogid:this.props.id
             }
-            axios.post('http://localhost:5000/like/post',object).then(res=>{
+            axios.post('https://forumbacken.herokuapp.com/like/post',object).then(res=>{
                 if(this.state.likevalue==='like'){
                     this.setState({
                         likecount:this.state.likecount+1,

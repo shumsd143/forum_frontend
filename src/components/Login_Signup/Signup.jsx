@@ -68,11 +68,11 @@ class Signup extends React.Component{
             'password':this.state.password,
             'email':this.state.email
         }
-        fetch('http://localhost:5000/user/validity/'+this.state.email)
+        fetch('https://forumbacken.herokuapp.com/user/validity/'+this.state.email)
         .then(res=>res.json())
         .then(json=>{
             if(json.presence===false){        
-                axios.post('http://localhost:5000/user',data).then(res=>{
+                axios.post('https://forumbacken.herokuapp.com/user',data).then(res=>{
                     this.props.history.push('/login');
                 })
             }
@@ -105,7 +105,6 @@ class Signup extends React.Component{
                                 We'll never share your email with anyone else.
                             </Form.Text>
                         </Form.Group>
-
                         <Form.Group controlId="formBasicPassword">
                             <Row>
                                 <Col>

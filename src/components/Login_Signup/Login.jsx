@@ -33,7 +33,7 @@ class Login extends React.Component{
                 "email":this.state.lemail,
                 "password":this.state.lpass
             }
-            axios.post('http://localhost:5000/user/login',user).then(res=>{
+            axios.post('https://forumbacken.herokuapp.com/user/login',user).then(res=>{
                 console.log(res.data.status)
                 if(res.data.status==='failed'){
                     alert('Wrong email or password')
